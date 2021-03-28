@@ -14,8 +14,8 @@ public class FileGenerator {
     }
 
     public Path generateFile(int numberOfLines, int maxLineLength) throws IOException {
-        Path path = Paths.get(System.getProperty("user.dir") + "\\temp" + "\\TextFile.txt");
-        Files.createDirectories(path);
+        Files.createDirectories(Paths.get(System.getProperty("user.dir") + "\\temp"));
+        Path path = Paths.get(System.getProperty("user.dir") + "\\temp\\" + "TextFile.txt");
         Files.deleteIfExists(path);
         Path newFile = Files.createFile(path);
 
