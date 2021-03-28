@@ -8,7 +8,7 @@ public class StringGenerator {
 
     public String generateString(int maxLineLength) {
         StringBuilder sb = new StringBuilder(maxLineLength);
-        int minLineLength = 3;
+        int minLineLength = 1;
         int randomSize = ThreadLocalRandom.current().nextInt(minLineLength, maxLineLength + 1);
 
         for (int i = 0; i < randomSize; i++) {
